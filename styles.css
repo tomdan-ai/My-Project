@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #fff;
+}
+
+.hambuger {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  display: block;
+  width: 34px;
+  height: 3px;
+  background-color: #163ae3;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.for-logo a {
+  width: 76px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+section {
+  border-bottom-left-radius: 80px;
+  background-image: url("img/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
+  padding: 5rem 1.25rem 15rem;
+  background-color: #fff;
+  background-position-x: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  padding: 0.6em;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  font-style: normal;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 3%;
+}
+
+.connect a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
+}
+
+.connect ul li a {
+  text-decoration: none;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  height: 24px;
+  flex: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 23px;
+}
+
+.social-icons img {
+  height: 20px;
+  width: 20px;
+}
+
+.social-icons li {
+  list-style: none;
+}
