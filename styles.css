@@ -81,7 +81,7 @@ section {
   padding: 0.6em;
 }
 
-.intro p {
+p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -90,8 +90,8 @@ section {
   color: #344563;
 }
 
-.into h1 {
-  font-family: "Poppins", sans-serif;
+h1 {
+  font-family: "Poppins";
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -143,14 +143,4 @@ section {
 
 .social-icons li {
   list-style: none;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-nav {
-    display: none;
-  }
-
-  .Desktop-nav {
-    display: flex;
-  }
 }
