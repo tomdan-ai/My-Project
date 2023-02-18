@@ -157,6 +157,7 @@ h1 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
+  margin-top: 100px;
   background-color: #fff;
 }
 
@@ -164,6 +165,7 @@ h1 {
 .work-card:nth-of-type(3),
 .work-card:nth-of-type(4) {
   margin-top: 85px;
+  border-radius: 20px;
 }
 
 .work-card img {
@@ -378,6 +380,12 @@ button {
   cursor: pointer;
   width: fit-content;
   transition: all 0.3s ease-in-out;
+  padding-left: 20px;
+}
+
+.is-me {
+  padding-left: 20px;
+  border-top-right-radius: 80px;
 }
 
 .lang-icon {
@@ -481,6 +489,7 @@ h4 {
 /* -----------About Section------------ */
 .about {
   border-top-right-radius: 80px;
+  margin-top: 100px;
 }
 
 .span {
@@ -544,6 +553,7 @@ ul.list-items.skill-items {
   font-size: 20px;
   line-height: 24px;
   color: #000;
+  padding-left: 25px;
 }
 
 .know-line {
@@ -574,4 +584,8 @@ ul.list-items.skill-items {
 
 .intro-connect {
   margin-top: 10px;
+}
+
+.button-5 {
+  padding-left: 10px;
 }
