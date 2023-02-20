@@ -336,7 +336,8 @@ h1 {
 }
 
 .lang-item {
-  display: flex;
+  float: left;
+  list-style-type: none;
   flex-direction: row;
   align-items: center;
   color: #01f;
