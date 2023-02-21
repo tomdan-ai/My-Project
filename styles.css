@@ -148,10 +148,9 @@ h1 {
 .grid {
   background-color: #e5e5e5;
   display: flex;
-    gap: 24px;
-    flex-direction: column;
-    align-items: center;
   gap: 24px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .work-card {
@@ -159,7 +158,6 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
   width: 327px;
   margin-left: 25px;
   gap: 24px;
@@ -670,6 +668,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   /* margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0;
@@ -679,7 +678,7 @@ form {
 .Contact-section {
   background-image: url("img/contact\ form\ shapes-mobile@2x.png");
   background-position-x: right;
-  background-size:250px;
+  background-size: 250px;
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
@@ -702,7 +701,7 @@ form {
 
 .Contact-me h2 {
   display: block;
-  font-size: 40PX;
+  font-size: 40px;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0;
