@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #f0f0f0;
   max-width: 100%;
   min-height: 100vh;
+  background-color: #e5e5e5;
 }
 
 header {
@@ -147,12 +147,21 @@ h1 {
 
 .grid {
   background-color: #e5e5e5;
-  display: grid;
+  display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
   gap: 24px;
 }
 
 .work-card {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+
+  width: 327px;
+  margin-left: 25px;
   gap: 24px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -384,6 +393,7 @@ button {
 }
 
 .is-me {
+  padding-top: 100px;
   padding-left: 20px;
   border-top-right-radius: 80px;
 }
@@ -641,6 +651,9 @@ form {
 }
 
 .Contact-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ebebff;
   margin-top: 12px;
   font-style: normal;
@@ -652,16 +665,21 @@ form {
 }
 
 .Contact-me p {
-  display: block;
-  margin-block-start: 1em;
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0;
-  margin-inline-end: 0;
+  margin-inline-end: 0; */
 }
 
 .Contact-section {
   background-image: url("img/contact\ form\ shapes-mobile@2x.png");
   background-position-x: right;
+  background-size:250px;
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
@@ -684,7 +702,7 @@ form {
 
 .Contact-me h2 {
   display: block;
-  font-size: 1.5em;
+  font-size: 40PX;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0;
