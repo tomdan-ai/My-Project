@@ -371,6 +371,20 @@ h1 {
   order: 2;
   flex-grow: 0;
 }
+.lang-item2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  color: #01f;
+  width: 107px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
 
 button {
   font-family: "Poppins", sans-serif;
@@ -685,6 +699,7 @@ form {
 
 .Contact-section {
   background-image: url("img/contact\ form\ shapes-mobile@2x.png");
+  background-size: 250px;
   background-position-x: right;
   background-size: 250px;
   display: grid;
@@ -715,4 +730,15 @@ form {
   margin-inline-start: 0;
   margin-inline-end: 0;
   font-weight: bold;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 20px;
+  margin-right: 45px;
+  margin-top: 20px;
+}
+
+.navbar-list li {
+  list-style-type: none;
 }
