@@ -371,6 +371,20 @@ h1 {
   order: 2;
   flex-grow: 0;
 }
+.lang-item2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  color: #01f;
+  width: 107px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
 
 button {
   font-family: "Poppins", sans-serif;
@@ -685,6 +699,7 @@ form {
 
 .Contact-section {
   background-image: url("img/contact\ form\ shapes-mobile@2x.png");
+  background-size: 250px;
   background-position-x: right;
   background-size: 250px;
   display: grid;
@@ -715,4 +730,227 @@ form {
   margin-inline-start: 0;
   margin-inline-end: 0;
   font-weight: bold;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 20px;
+  margin-right: 45px;
+  margin-top: 20px;
+}
+
+.navbar-list li {
+  list-style-type: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .pics {
+    background-image: url(img/Desktop\ Header\ bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 249px;
+    padding-left: 260px;
+    padding-right: 260px;
+    border: 1px solid #ebebff;
+    border-top: hidden;
+    border-bottom-left-radius: 96px;
+  }
+
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-left: 155px;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .navbar-list {
+    display: flex;
+    gap: 20px;
+    margin-right: 142px;
+    padding-top: 16px;
+    padding-bottom: 26px;
+    background-color: #fff;
+  }
+
+  .navbar-list li a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .nav-bar {
+    height: 72px;
+    background-color: #fff;
+    border-style: hidden;
+  }
+
+  .social-icons {
+    padding-bottom: 36px;
+  }
+
+  /* || WORKS STYLING */
+  
+  .work-card {
+    flex-direction: row;
+    width: 700px;
+    gap: 30px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  /* .work-card:nth-of-type(4n) {
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    cursor: pointer;
+  } */
+
+  .work-card:hover {
+    border-color: #01f;
+  }
+
+  .work-card1:hover .card-description > button {
+    background-color: #01f;
+    color: #fff;
+  }
+
+  .card img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+
+  .work-card1 {
+    justify-content: center;
+    gap: 15px;
+  }
+
+   .work-card1 > h2 {
+    font-size: 24px;
+  }
+
+  .work-card1 > p {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .work-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .lang-item {
+    font-size: 12px;
+  }
+
+  /* Components and Buttons */
+  button {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+
+  /* || ABOUT PAGE STYLING */
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+
+  .is-me {
+    margin-left: 132px;
+  }
+
+  .know-flex {
+    margin-right: 68px;
+  }
+
+  .works-title-2 {
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .know-sec {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .know-list {
+    display: block;
+    width: 122px;
+    height: 120px;
+  }
+
+  .text {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .know-text {
+    list-style-type: none;
+  }
+
+  #languages {
+    margin-top: 80px;
+  }
+  
+  .know-line {
+    margin-top: 64px;
+  }
+
+  /* || CONTACT PAGE STYING */
+
+  .Contact-section {
+    background-image: url(img/Desktop\ contact\ form\ background\ shapes@2x.png);
+    background-size: 90%;
+    align-items: center;
+  }
+
+  .Contact-paragraph {
+    padding-left: 360px;
+    padding-right: 360px;
+  }
+
+  .form-class {
+    align-items: center;
+  }
+
+  .contact-info {
+    border-radius: 0;
+    margin-bottom: 27px;
+    margin-top: 10px;
+  }
+
+  .text-input {
+    border-radius: 0;
+  }
+
+  .form-btn {
+    margin-left: 100px;
+    margin-top: 39px;
+  }
+  .knowdge ul {
+    list-style: none;
+  }
+
+button:hover {
+  background-color: #01f;
+  color: #fff;
+}
 }
