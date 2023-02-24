@@ -742,3 +742,10 @@ form {
 .navbar-list li {
   list-style-type: none;
 }
+
+.social-icons li {
+  transition: all 0.3s ease-in-out;
+}
+.social-icons li:hover { 
+  transform:translateY(-10px);
+}
