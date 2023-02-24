@@ -755,6 +755,9 @@ form {
   list-style-type: none;
 }
 
-.social-icons li:hover {
-  transform: translateY(-10px);
+.social-icons li {
+  transition: all 0.3s ease-in-out;
+}
+.social-icons li:hover { 
+  transform:translateY(-10px);
 }
