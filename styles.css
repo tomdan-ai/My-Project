@@ -804,11 +804,20 @@ form {
 
   .work-card {
     flex-direction: row;
-    width: 700px;
+    width: 1156px;
+    height: 496px;
     gap: 30px;
     justify-content: space-between;
     border: 1px solid #fff;
     cursor: pointer;
+  }
+
+  .work-card3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 135px;
   }
 
   /* .work-card:nth-of-type(4n) {
@@ -827,7 +836,6 @@ form {
   button {
     font-size: 14px;
     padding: 7px 10px;
-    margin-top: 5px;
   }
 
   button:hover {
@@ -841,19 +849,23 @@ form {
   }
 
   .work-card img {
-    width: 300px;
-    height: 300px;
+    height: 448px;
+    width: 544px;
     object-fit: unset;
   }
 
   .work-card1 {
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 52px;
+    gap: 15px;
+    margin-bottom: 135px;
   }
 
   .work-card1 > h2 {
-    font-size: 24px;
+    font-size: 40px;
+    font-weight: 700;
+    width: 100%;
   }
 
   .work-card1 > p {
