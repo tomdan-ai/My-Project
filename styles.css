@@ -989,7 +989,8 @@ form {
   .knowdge ul {
     list-style: none;
   }
-  
-.social-icons li:hover {
-  transform: translateY(-10px);
+
+  .social-icons li:hover {
+    transform: translateY(-10px);
+  }
 }
