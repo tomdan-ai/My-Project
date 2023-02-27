@@ -170,7 +170,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 327px;
+  width: 375px;
   margin-left: 25px;
   gap: 24px;
   border: 1px solid #dfe1e6;
@@ -615,6 +615,11 @@ ul.list-items.skill-items {
 
 .about-me {
   background-color: #fff;
+  border-top-right-radius: 80px;
+}
+
+.gap ul {
+  list-style-type: none;
 }
 
 .intro-connect {
@@ -745,16 +750,247 @@ form {
 }
 
 .navbar-list {
-  display: flex;
   gap: 20px;
   margin-right: 45px;
   margin-top: 20px;
+  display: none;
 }
 
 .navbar-list li {
   list-style-type: none;
 }
 
-.social-icons li:hover {
-  transform: translateY(-10px);
+@media screen and (min-width: 768px) {
+  .pics {
+    background-image: url(img/Desktop\ Header\ bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 249px;
+    padding-left: 260px;
+    padding-right: 260px;
+    border: 1px solid #ebebff;
+    border-top: hidden;
+    border-bottom-left-radius: 96px;
+  }
+
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-left: 155px;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .navbar-list {
+    display: flex;
+    gap: 20px;
+    margin-right: 142px;
+    padding-top: 16px;
+    padding-bottom: 26px;
+    background-color: #fff;
+  }
+
+  .navbar-list li a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: 20px;
+  }
+
+  .nav-bar {
+    height: 72px;
+    background-color: #fff;
+    border-style: hidden;
+  }
+
+  .social-icons {
+    padding-bottom: 36px;
+  }
+
+  /* || WORKS STYLING */
+
+  .work-card {
+    flex-direction: row;
+    width: 1156px;
+    height: 496px;
+    gap: 30px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .work-card3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 135px;
+  }
+
+  /* .work-card:nth-of-type(4n) {
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    cursor: pointer;
+  } */
+
+  .work-card:hover {
+    border-color: #01f;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+
+  button:hover {
+    background-color: #01f;
+    color: #fff;
+  }
+
+  .work-card1:hover .card-description > button {
+    background-color: #01f;
+    color: #fff;
+  }
+
+  .work-card img {
+    height: 448px;
+    width: 544px;
+    object-fit: unset;
+  }
+
+  .work-card1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 135px;
+  }
+
+  .work-card1 > h2 {
+    font-size: 40px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .work-card1 > p {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .work-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .lang-item {
+    font-size: 12px;
+  }
+
+  /* Components and Buttons */
+
+  /* || ABOUT PAGE STYLING */
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+
+  .is-me {
+    margin-left: 132px;
+  }
+
+  .know-flex {
+    margin-right: 68px;
+  }
+
+  .works-title-2 {
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .know-sec {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .gap {
+    padding-bottom: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .know-list {
+    display: block;
+    width: 122px;
+    height: 120px;
+  }
+
+  .text {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .know-text {
+    list-style-type: none;
+  }
+
+  #languages {
+    margin-top: 80px;
+  }
+
+  .know-line {
+    margin-top: 64px;
+  }
+
+  /* || CONTACT PAGE STYING */
+
+  .Contact-section {
+    background-image: url(img/Desktop\ contact\ form\ background\ shapes@2x.png);
+    background-size: 90%;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .Contact-paragraph {
+    padding-left: 360px;
+    padding-right: 360px;
+  }
+
+  .form-class {
+    align-items: center;
+  }
+
+  .contact-info {
+    border-radius: 0;
+    margin-top: 10px;
+    width: 400px;
+  }
+
+  .text-input {
+    border-radius: 0;
+    width: 400px;
+  }
+
+  .form-btn {
+    margin-left: 145px;
+    margin-top: 39px;
+  }
+
+  .knowdge ul {
+    list-style: none;
+  }
+
+  .social-icons li:hover {
+    transform: translateY(-10px);
+  }
 }

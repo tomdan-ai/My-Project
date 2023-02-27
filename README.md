@@ -24,10 +24,10 @@
 - [📝 License](#license)
 
 
-# 📖 [Microverse-Student-Project-1] <a name="about-project"></a>
+# 📖 [My-Portfolio] <a name="about-project"></a>
 
 
-**[Microverse-Student-Project-1]** is a my portfolio built from scratch with a figma template 
+**[My-Portfolio]** is a my portfolio built from scratch with a figma template 
 
 ## 🛠 Built With <a name="built-with"></a>
 HTML
@@ -66,6 +66,7 @@ CSS
 
 ## 🚀 Live Demo <a name="https://tomdan-ai.github.io/My-Portfolio/"></a>
 https://tomdan-ai.github.io/My-Portfolio/
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,6 +123,7 @@ You can deploy this project using: [github pages]
 👤 **TOM-DANIEL**
 
 - GitHub: [tomdan-ai](https://github.com/tomdan-ai)
+-Linkedin: [Tom-Udoh](https://www.linkedin.com/in/tom-udoh-a89046256/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
