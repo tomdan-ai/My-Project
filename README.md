@@ -64,8 +64,8 @@ CSS
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
+## 🚀 Live Demo <a name="https://tomdan-ai.github.io/My-Portfolio/"></a>
+https://tomdan-ai.github.io/My-Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,7 +110,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: [github pages]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
