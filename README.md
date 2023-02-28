@@ -125,9 +125,14 @@ You can deploy this project using: [github pages]
 - GitHub: [tomdan-ai](https://github.com/tomdan-ai)
 -Linkedin: [Tom-Udoh](https://www.linkedin.com/in/tom-udoh-a89046256/)
 
+
+
+👤 **Marwan-Abdelsattar**
+
+- GitHub: [marwandev](https://github.com/marwandev)
+-Linkedin: [Marwan Abdelsattar](https://www.linkedin.com/in/marwan-abdelsattar-665a59105/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 
