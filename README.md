@@ -25,6 +25,7 @@
 
 
 # 📖 [My-Portfolio] <a name="about-project"></a>
+### <p>Click <a href="https://www.loom.com/share/aa06511c5c8945d2921c020ba4275b75">here</a>to watch a video about the project</p>
 
 
 **[My-Portfolio]** is a my portfolio built from scratch with a figma template 
