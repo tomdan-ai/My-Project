@@ -25,6 +25,7 @@
 
 
 # 📖 [My-Portfolio] <a name="about-project"></a>
+### <p>Click <a href="https://www.loom.com/share/aa06511c5c8945d2921c020ba4275b75">here</a>to watch a video about the project</p>
 
 
 **[My-Portfolio]** is a my portfolio built from scratch with a figma template 
@@ -65,7 +66,7 @@ CSS
 
 
 ## 🚀 Live Demo <a name="https://tomdan-ai.github.io/My-Portfolio/"></a>
-https://tomdan-ai.github.io/My-Portfolio/
+### <p>Click <a href="https://tomdan-ai.github.io/My-Project/">here</a> for the live demo</p>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -125,6 +126,7 @@ You can deploy this project using: [github pages]
 - GitHub: [tomdan-ai](https://github.com/tomdan-ai)
 -Linkedin: [Tom-Udoh](https://www.linkedin.com/in/tom-udoh-a89046256/)
 
+
 👤 **Phone Khaing Hein**
 
 - GitHub: [tomdan-ai](https://github.com/Rimuru-Tempest-26)
@@ -132,6 +134,13 @@ You can deploy this project using: [github pages]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+
+👤 **Marwan-Abdelsattar**
+
+- GitHub: [marwandev](https://github.com/marwandev)
+-Linkedin: [Marwan Abdelsattar](https://www.linkedin.com/in/marwan-abdelsattar-665a59105/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 🔭 Future Features <a name="future-features"></a>
 
 
