@@ -3,16 +3,16 @@ function myElement(selector) {
 }
 
 const menu = myElement('#hamma');
-const nav = myElement('.mobile-nav');
+const navbar = myElement('.mobile-nav');
 const closeNav = myElement('.close-btn');
 const choose = myElement('.mobile-nav');
 
 function addMenu(selected) {
-  return selected.addEventListener('click', () => nav.classList.add('nav-toggle'));
+  return selected.addEventListener('click', () => navbar.classList.add('nav-toggle'));
 }
 
 function removeMenu(selected) {
-  return selected.addEventListener('click', () => nav.classList.remove('nav-toggle'));
+  return selected.addEventListener('click', () => navbar.classList.remove('nav-toggle'));
 }
 
 addMenu(menu);
