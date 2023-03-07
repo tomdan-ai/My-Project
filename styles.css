@@ -725,7 +725,7 @@ form {
 .text-input {
   font-family: "poppins", sans-serif;
   font-size: 17px;
-  font-weight: 400px;
+  font-weight: 400;
   width: 327px;
   height: 170px;
   border: 1px solid #cfd8dc;
