@@ -1,3 +1,5 @@
+// HAMBUGGER MENU
+
 function myElement(selector) {
   return document.querySelector(selector);
 }
