@@ -1,29 +1,26 @@
 // // FORM VALIDATION
 
-const form = document.getElementById('contact-form');
-console.log(form);
+const contactForm = document.getElementById("contact-form");
 
-form.addEventListener('submit', (e) => {
+contactForm.addEventListener("submit", (e) => {
   const email = e.target[1].value;
-  console.log(email);
   if (email.toLowerCase() === email) {
     const name = e.target[0].value;
     const message = e.target[2].value;
-    fetch('https://formspree.io/f/xoqzdloe', {
-      method: 'POST',
+    fetch("https://formspree.io/f/xoqzdloe", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ name, email, message }),
     });
   } else {
     e.preventDefault();
-    const error = document.getElementById('errorMessage');
-    error.innerText = 'Your email should be in lowercase only!!!';
-    error.style = 'color:#fff;display:block;margin-top:10px;margin-bottom:10px';
+    const errorMessage = document.getElementById("errorMessage");
+    errorMessage.innerText = "Your email should be in lowercase only!!!";
+    errorMessage.style = "color:#fff;display:block;margin-top:10px;";
   }
 });
-
 
 // Hambuger
 
@@ -31,80 +28,86 @@ function myElement(selector) {
   return document.querySelector(selector);
 }
 
-const menu = myElement('#hamma');
-const navbar = myElement('.mobile-nav');
-const closeNav = myElement('.close-btn');
-const choose = myElement('.mobile-nav');
+const menu = myElement("#hamma");
+const navbar = myElement(".mobile-nav");
+const closeNav = myElement(".close-btn");
+const choose = myElement(".mobile-nav");
 
 function addMenu(selected) {
-  return selected.addEventListener('click', () => navbar.classList.add('nav-toggle'));
+  return selected.addEventListener("click", () =>
+    navbar.classList.add("nav-toggle")
+  );
 }
 
 function removeMenu(selected) {
-  return selected.addEventListener('click', () => navbar.classList.remove('nav-toggle'));
+  return selected.addEventListener("click", () =>
+    navbar.classList.remove("nav-toggle")
+  );
 }
 
 addMenu(menu);
 removeMenu(closeNav);
 removeMenu(choose);
 
-
-
 // WORKS SECTION
-const workSection = document.querySelector('#work-section');
+const workSection = document.querySelector("#work-section");
 
 // DYNAMICALLY POPULATE PORTFOLIO SECTION
 
 const portfolioItems = [
   {
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'img/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'javascript'],
-    liveLink: '',
-    sourceLink: '',
-    category: 'CANOPY',
-    stack: 'Back End Dev',
-    year: '2015',
+    name: "Tonic",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    featuredImage: "img/Snapshoot Portfolio.png",
+    technologies: ["html", "css", "javascript"],
+    liveLink: "",
+    sourceLink: "",
+    category: "CANOPY",
+    stack: "Back End Dev",
+    year: "2015",
   },
   {
-    name: 'Multi-Post Stories',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    featuredImage: 'img/card 1.svg',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: '',
-    sourceLink: '',
-    category: 'FACEBOOK',
-    stack: 'Full Stack Dev',
-    year: '2015',
+    name: "Multi-Post Stories",
+    description:
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    featuredImage: "img/card 1.svg",
+    technologies: ["html", "Ruby on rails", "css", "javascript"],
+    liveLink: "",
+    sourceLink: "",
+    category: "FACEBOOK",
+    stack: "Full Stack Dev",
+    year: "2015",
   },
   {
-    name: 'Facebook 360',
-    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    featuredImage: 'img/card 1 (2).svg',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: '',
-    sourceLink: '',
-    category: 'FACEBOOK',
-    stack: 'Full Stack Dev',
-    year: '2015',
+    name: "Facebook 360",
+    description:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    featuredImage: "img/card 1 (2).svg",
+    technologies: ["html", "Ruby on rails", "css", "javascript"],
+    liveLink: "",
+    sourceLink: "",
+    category: "FACEBOOK",
+    stack: "Full Stack Dev",
+    year: "2015",
   },
   {
-    name: 'Uber Navigation',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    featuredImage: 'img/card 4.svg',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: '',
-    sourceLink: '',
-    category: 'Uber',
-    stack: 'Lead Developer',
-    year: '2018',
+    name: "Uber Navigation",
+    description:
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    featuredImage: "img/card 4.svg",
+    technologies: ["html", "Ruby on rails", "css", "javascript"],
+    liveLink: "",
+    sourceLink: "",
+    category: "Uber",
+    stack: "Lead Developer",
+    year: "2018",
   },
 ];
 
-let portfolioSection = '';
+let portfolioSection = "";
 portfolioItems.forEach((item, index) => {
-  let technologies = '';
+  let technologies = "";
   item.technologies.forEach((tech) => {
     technologies += `<li class="lang-item">${tech}</li>`;
   });
@@ -130,24 +133,17 @@ portfolioItems.forEach((item, index) => {
   // portfolioSection += portfolioItem;
 });
 
-
-
-
-
-
-
-
 workSection.innerHTML += portfolioSection;
 
 // POPUP MENU
-const seeProjectButtons = document.querySelectorAll('.see-project-button');
-const popupMenuContainer = document.querySelector('#popup-menu-container');
+const seeProjectButtons = document.querySelectorAll(".see-project-button");
+const popupMenuContainer = document.querySelector("#popup-menu-container");
 seeProjectButtons.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
-    const buttonIndex = Number(e.target.id.split('-')[2]);
+  btn.addEventListener("click", (e) => {
+    const buttonIndex = Number(e.target.id.split("-")[2]);
     const portfolioItem = portfolioItems[buttonIndex];
 
-    let technologies = '';
+    let technologies = "";
     portfolioItem.technologies.forEach((tech) => {
       technologies += `<li class="lang-item">${tech}</li>`;
     });
@@ -189,10 +185,11 @@ seeProjectButtons.forEach((btn) => {
       </div>
     </div>`;
 
-    popupMenuContainer.style.display = 'flex';
-    document.querySelector('#close-popup-menu').addEventListener('click', () => {
-      popupMenuContainer.style.display = 'none';
-    });
+    popupMenuContainer.style.display = "flex";
+    document
+      .querySelector("#close-popup-menu")
+      .addEventListener("click", () => {
+        popupMenuContainer.style.display = "none";
+      });
   });
 });
-
