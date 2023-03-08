@@ -693,6 +693,12 @@ form {
   padding-left: 10px;
 }
 
+#errorMessage {
+  display: none;
+  color: #fff;
+  text-align: center;
+}
+
 .Contact-paragraph {
   display: flex;
   justify-content: center;
@@ -812,7 +818,11 @@ form {
     background-color: #fff;
     border-style: hidden;
   }
-
+  #errorMessage {
+    display: none;
+    color: #fff;
+    text-align: center;
+  }
   .social-icons {
     padding-bottom: 36px;
   }
