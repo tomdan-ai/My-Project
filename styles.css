@@ -7,6 +7,7 @@
   text-decoration: none;
   color: #fff;
   list-style: none;
+  font-family: 'poppins', sans-serif;
 }
 
 body {
@@ -641,6 +642,49 @@ ul.list-items.skill-items {
   font-weight: 500;
   color: #5e6c84;
   transform: rotate(90deg);
+}
+
+#popup-menu-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 20px;
+}
+
+#popup-menu {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#popup-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popup-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#close-popup-menu {
+  cursor: pointer;
+  color: #67798e;
+  font-size: 32px;
+  border: none;
 }
 
 /* .know-list {
