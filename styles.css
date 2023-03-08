@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: #fff;
+  color:#67798e;;
   list-style: none;
   font-family: 'poppins', sans-serif;
 }
@@ -669,6 +669,7 @@ ul.list-items.skill-items {
 }
 
 #popup-menu-header {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -685,6 +686,19 @@ ul.list-items.skill-items {
   color: #67798e;
   font-size: 32px;
   border: none;
+}
+
+#popup-buttons {
+  display: flex;
+    width: 300px;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#canopy1 {
+  display: flex;
+  gap: 20px;
+ 
 }
 
 /* .know-list {
@@ -918,6 +932,39 @@ form {
     gap: 15px;
     margin-bottom: 135px;
   }
+
+  #js-img {
+    background-size: 100%;
+    background-image: url("img/Snapshoot\ Portfolio.png");
+  }
+
+  #js-txt {
+    width: 300px;
+  }
+
+  #popup-menu-footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 12px;
+    border-radius: 16px;
+    margin-top: -111px;
+}
+#popup-buttons {
+margin-left: -200px;
+display: flex;
+width: 300px;
+gap: 50px;
+margin-top: 25px;
+margin-bottom: 40px;
+}
+
+.stackbar {
+  margin-left: 400px;
+    display: flex;
+    margin-bottom: -70px;
+}
 
   /* .work-card:nth-of-type(4n) {
     flex-direction: column;

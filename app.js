@@ -96,8 +96,15 @@ portfolioItems.forEach((item, index) => {
         <button id="portfolio-button-${index}" class="see-project-button button-style-1">See Project</button>
       </div>
     </div>`;
-  portfolioSection += portfolioItem;
+  // portfolioSection += portfolioItem;
 });
+
+
+
+
+
+
+
 
 workSection.innerHTML += portfolioSection;
 
@@ -122,19 +129,21 @@ seeProjectButtons.forEach((btn) => {
           &times;
         </span>
       </div>
-      <ul>
+      <ul id="canopy1">
         <li><strong>${portfolioItem.category}</strong></li>
         <li>${portfolioItem.stack}</li>
         <li>${portfolioItem.year}</li>
       </ul>
+      <div id="js-img">
       <img src="${portfolioItem.featuredImage}">
+      </div>
       <div id="popup-menu-footer">
-        <p>${portfolioItem.description}</p>
+        <p id="js-txt">${portfolioItem.description}</p>
         <div id="popup-menu-footer-right">
           <ul class="stackbar">
             ${technologies}
           </ul>
-          <hr>
+          <hr id="hr">
           <div id="popup-buttons">
             <button class="button-style-1">
               See Live
