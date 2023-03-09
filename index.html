@@ -18,6 +18,23 @@
       <nav class="nav-link">
         <div class="Hambuger">
           <div id="hamma">
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tom full-stack web developer</title>
+  </head>
+  <body>
+    <header id="main">
+      <div class="nav-bar">
+        <div class="for-logo">
+          <a class="logo" href="#">Tom</a>
+        </div>
+        <nav class="nav-link">
+          <div class="Hambuger">
+            <div id="hamma">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -177,7 +194,6 @@
   </section>
 
 
-
   <section id="contact" class="Contact-section">
     <div class="Contact-me">
       <h2 class="Contact-head">Contact me</h2>
@@ -203,4 +219,49 @@
   <script src="app.js"></script>
 </body>
 
+</html>
+    <section id="contact" class="Contact-section">
+      <div class="Contact-me">
+        <h2 class="Contact-head">Contact me</h2>
+        <p class="Contact-paragraph">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+      </div>
+      <div class="form-class">
+        <form action="https://formspree.io/f/xoqzdloe" method="post" id="contact-form">
+          <input
+            class="contact-info form-email"
+            name="name"
+            placeholder="Tom"
+            type="text"
+            maxlength="30"
+            required
+          /><br />
+          <input
+
+            class="contact-info"
+            name="email"
+            type="email"
+            placeholder="tomudoh258@gmail.com"
+            required
+          /><p id="errorMessage" style="display:none"></p><br />
+          <textarea
+            class="text-input"
+            name="message"
+            cols="30"
+            rows="9"
+            placeholder="Write your message here"
+            maxlength="500"
+            required spellcheck="false"
+          ></textarea
+          ><br />
+          <input type="submit" class="form-btn" value="Get in touch" />
+          
+        </form>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
