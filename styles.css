@@ -857,7 +857,7 @@ form {
 }
 
 .portfolio-modal-img img {
-  width: 100%;
+  width: 22%;
   padding: 10px;
   align-self: center;
 }
@@ -1435,7 +1435,7 @@ button {
     display: flex;
     justify-content: center;
     text-align: left;
-    width: 95%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -1449,7 +1449,7 @@ button {
 
   .prop-modal {
     display: flex;
-    margin-top: -25px;
+    margin-top: -35px;
     height: 20px;
   }
 
@@ -1470,7 +1470,7 @@ button {
     line-height: 40px;
     color: #344563;
     text-align: justify;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   .git,
@@ -1484,7 +1484,7 @@ button {
     flex-direction: column;
     align-items: center;
     width: 400px;
-    margin-left: 817px;
+    margin-left: 636px;
     margin-top: 76px;
   }
 
