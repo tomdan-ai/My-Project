@@ -1,144 +1,134 @@
-// WORKS SECTION
-const workSection = document.querySelector("#work-section");
+// // WORKS SECTION
 
-// DYNAMICALLY POPULATE PORTFOLIO SECTION
-
-const portfolioItems = [
+const cards = [
   {
-    name: "Tonic",
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    featuredImage: "img/Snapshoot Portfolio.png",
-    technologies: ["html", "css", "javascript"],
-    liveLink: "",
-    sourceLink: "",
-    category: "CANOPY",
-    stack: "Back End Dev",
-    year: "2015",
+    image: 'img/Snapshoot Portfolio.png',
+    name: 'Tonic',
+    preview: '',
+    code: '',
+    tags: ['html', 'css', 'javascript'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
-    name: "Multi-Post Stories",
-    description:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    featuredImage: "img/card 1.svg",
-    technologies: ["html", "Ruby on rails", "css", "javascript"],
-    liveLink: "",
-    sourceLink: "",
-    category: "FACEBOOK",
-    stack: "Full Stack Dev",
-    year: "2015",
+    image: 'img/card 1.svg',
+    name: 'Multi-Post Stories',
+    preview: '',
+    code: '',
+    tags: ['html', 'Ruby on rails', 'css', 'javascript'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
-    name: "Facebook 360",
-    description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    featuredImage: "img/card 1 (2).svg",
-    technologies: ["html", "Ruby on rails", "css", "javascript"],
-    liveLink: "",
-    sourceLink: "",
-    category: "FACEBOOK",
-    stack: "Full Stack Dev",
-    year: "2015",
+    image: 'img/card 1 (2).svg',
+    name: 'Tonic',
+    preview: '',
+    code: '',
+    tags: ['html', 'Ruby on rails', 'css', 'javascript'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
-    name: "Uber Navigation",
-    description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    featuredImage: "img/card 4.svg",
-    technologies: ["html", "Ruby on rails", "css", "javascript"],
-    liveLink: "",
-    sourceLink: "",
-    category: "Uber",
-    stack: "Lead Developer",
-    year: "2018",
+    image: 'img/card 4.svg',
+    name: 'Multi-Post Stories',
+    preview: '',
+    code: '',
+    tags: ['html', 'Ruby on rails', 'css', 'javascript'],
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
 ];
 
-let portfolioSection = "";
-portfolioItems.forEach((item, index) => {
-  let technologies = "";
-  item.technologies.forEach((tech) => {
-    technologies += `<li class="lang-item">${tech}</li>`;
-  });
-  const portfolioItem = `
-    <div class="work-card">
-      <img src="${item.featuredImage}" alt="Tonic" />
-      <div class="work-card1">
-        <h2>${item.name}</h2>
-        <div class="canopy">
-          <span>${item.category}</span>
-          <ul>
-            <li>${item.stack}</li>
-            <li>${item.year}</li>
-          </ul>
-        </div>
-        <p class="daily">${item.description}</p>
-        <ul class="work-card">
-          ${technologies}
+// projects dynamic
+const cardsContainer = document.querySelector('.grid');
+cards.forEach((cardContent) => {
+  const item = document.createElement('work-container-main');
+
+  item.classList.add('cards-held-here');
+  const content = document.createElement('work-cont');
+
+  content.innerHTML = `
+<section class="work-cont work-container-desktop">
+  <div class="portfolio-img desktop-img-0">
+
+    <img src="${cardContent.image}" alt="${cardContent.name}" class="full-size">
+  </div>
+  <div class="work-content">
+        <h2 class="tonic0 tonic">${cardContent.name}</h2>
+        <ul class="prop">
+          <li class="can">CANOPY</li>
+          <li class="bac"><img src="img/dot.jpg" alt="dot"> Back End Dev</li>
+          <li class="num"><img src="img/dot.jpg" alt="dot"> 2015</li>
         </ul>
-        <button id="portfolio-button-${index}" class="see-project-button button-style-1">See Project</button>
-      </div>
-    </div>`;
-  // portfolioSection += portfolioItem;
-});
-
-workSection.innerHTML += portfolioSection;
-
-// POPUP MENU
-const seeProjectButtons = document.querySelectorAll(".see-project-button");
-const popupMenuContainer = document.querySelector("#popup-menu-container");
-seeProjectButtons.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    const buttonIndex = Number(e.target.id.split("-")[2]);
-    const portfolioItem = portfolioItems[buttonIndex];
-
-    let technologies = "";
-    portfolioItem.technologies.forEach((tech) => {
-      technologies += `<li class="lang-item">${tech}</li>`;
-    });
-
-    popupMenuContainer.innerHTML = `
-    <div id="popup-menu">
-      <div id="popup-menu-header">
-        <h2>${portfolioItem.name}</h2>
-        <span class="material-symbols-outlined" id="close-popup-menu">
-          &times;
-        </span>
-      </div>
-      <ul id="canopy1">
-        <li><strong>${portfolioItem.category}</strong></li>
-        <li>${portfolioItem.stack}</li>
-        <li>${portfolioItem.year}</li>
-      </ul>
-      <div id="js-img">
-      <img src="${portfolioItem.featuredImage}">
-      </div>
-      <div id="popup-menu-footer">
-        <p id="js-txt">${portfolioItem.description}</p>
-        <div id="popup-menu-footer-right">
-          <ul class="stackbar">
-            ${technologies}
-          </ul>
-          <hr id="hr">
-          <div id="popup-buttons">
-            <button class="button-style-1">
-              See Live
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-            <button class="button-style-1">
-              See Source
-              <i class="fa-brands fa-github"></i>
-            </button>
-          </div>
+        <p class="tonic-def">A daily selection of privately<br> personalized reads; no accounts or<br> sign-ups
+          required.</p>
+        <ul class="stack stack-desktop">
+          <li class="html">html</li>
+          <li class="css">css</li>
+          <li class="js">javaScript</li>
+        </ul>
+        <div class="button">
+        <a href="${cardContent.preview}" ><button id="modalBtn-1" type="button" class="testButton">See Project</button></a>
         </div>
       </div>
-    </div>`;
+    </section>
+  `;
 
-    popupMenuContainer.style.display = "flex";
-    document
-      .querySelector("#close-popup-menu")
-      .addEventListener("click", () => {
-        popupMenuContainer.style.display = "none";
-      });
+  const modal = document.createElement('div');
+  modal.classList.add('modal');
+  modal.classList.add('d-none');
+  const modalContent = document.createElement('div');
+  modalContent.innerHTML = `
+  <div class="work-content-modal">
+    <span class="closeBtn">&times;</span>
+      <h2 class="tonic0-modal">Tonic</h2>
+      <ul class="prop-modal">
+      <li class="can">CANOPY</li>
+      <li class="bac"><img src="img/dot.jpg" alt="dot"> Back End Dev</li>
+      <li class="num"><img src="img/dot.jpg" alt="dot"> 2015</li>
+    </ul>
+
+    <div class="portfolio-modal-img">
+     <img src="${cardContent.image}" alt="${cardContent.name}">
+    </div>
+
+    <div class="tonic-modal">
+    <p>${cardContent.desc}</p>
+    </div>
+    <div class="alignment">
+      <ul class="stack-modal stack-desktop">
+      <li class="html">html</li>
+      <li class="css">css</li>
+      <li class="js">javaScript</li><br />
+      <li class="git">github</li>
+      <li class="ruby">ruby</li>
+      <li class="boot">Bootstraps</li>
+    </ul>
+
+    <img src="img/icon11.jpg" alt="separator" class="line">
+
+    <div class="modal-button">
+      <a href="${cardContent.preview}" ><button id="modalBtn-0" type="button">See live <img src="img/icon12.jpg" alt="modal-icon"></button></a>
+      <a href="${cardContent.preview}" ><button id="modalBtn-1" type="button">See Source <img src="img/icon13.jpg" alt="modal-icon-git"></button></a>
+    </div>
+    </div>
+    </div>
+  </div> 
+  `;
+
+  modal.appendChild(modalContent);
+  item.appendChild(content);
+  item.appendChild(modal);
+  cardsContainer.appendChild(item);
+
+  // popup interaction
+  const openModal = item.querySelector('.testButton');
+  const closeModal = item.querySelector('.closeBtn');
+
+  openModal.addEventListener('click', (event) => {
+    modal.classList.add('modal');
+    modal.style.display = 'block';
+    event.preventDefault();
+  });
+
+  closeModal.addEventListener('click', () => {
+    modal.classList.remove('modal');
+    modal.style.display = 'none';
   });
 });
