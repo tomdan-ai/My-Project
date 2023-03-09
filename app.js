@@ -1,4 +1,4 @@
-//FORM VALIDATION
+// FORM VALIDATION
 const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', (e) => {
   const email = e.target[1].value;
