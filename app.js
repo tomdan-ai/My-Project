@@ -215,4 +215,3 @@ message.addEventListener('change', (e) => {
   contactData.username = username.value;
   localStorage.setItem('contact-data', JSON.stringify(contactData));
 });
-
