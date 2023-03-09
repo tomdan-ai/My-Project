@@ -324,9 +324,9 @@
         </p>
       </div>
       <div class="form-class">
-        <form action="https://formspree.io/f/xoqzdloe" method="post">
+        <form action="https://formspree.io/f/xoqzdloe" method="post" id="contact-form">
           <input
-            class="contact-info"
+            class="contact-info form-email"
             name="name"
             placeholder="Tom"
             type="text"
@@ -334,23 +334,25 @@
             required
           /><br />
           <input
+
             class="contact-info"
             name="email"
             type="email"
             placeholder="tomudoh258@gmail.com"
             required
-          /><br />
+          /><p id="errorMessage" style="display:none"></p><br />
           <textarea
             class="text-input"
-            name="textarea"
+            name="message"
             cols="30"
             rows="9"
             placeholder="Write your message here"
             maxlength="500"
-            required
+            required spellcheck="false"
           ></textarea
           ><br />
           <input type="submit" class="form-btn" value="Get in touch" />
+          
         </form>
       </div>
     </section>
