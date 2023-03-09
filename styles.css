@@ -547,10 +547,6 @@ h4 {
   padding: 24px 42px 36px 0;
 }
 
-.know-list {
-  list-style-type: none;
-}
-
 .self {
   margin: 12px 0;
   font-family: "Poppins", sans-serif;
@@ -603,6 +599,7 @@ ul.list-items.skill-items {
 }
 
 .know-list {
+  list-style-type: none;
   align-items: center;
   padding: 24px;
   gap: 12px;
@@ -818,11 +815,13 @@ form {
     background-color: #fff;
     border-style: hidden;
   }
+
   #errorMessage {
     display: none;
     color: #fff;
     text-align: center;
   }
+
   .social-icons {
     padding-bottom: 36px;
   }
