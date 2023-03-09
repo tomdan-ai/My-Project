@@ -1034,6 +1034,7 @@ form {
   .text-input {
     border-radius: 0;
     width: 400px;
+    color: #000;
   }
 
   .form-btn {
