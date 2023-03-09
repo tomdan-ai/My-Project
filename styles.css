@@ -39,7 +39,7 @@ header {
 }
 
 .mobile-nav li {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -60,7 +60,7 @@ header {
   padding: 0 7px;
   float: right;
   margin-left: 85%;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .bar {
@@ -244,7 +244,7 @@ h2 {
   width: 327px;
   left: 24px;
   top: 114px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -933,7 +933,7 @@ form {
 .work-content {
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   gap: 25px;
   justify-content: flex-start;
 }
@@ -1028,7 +1028,7 @@ form {
 .stack,
 .stack-modal {
   display: flex;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -1222,7 +1222,7 @@ button {
     color: #344563;
     font-size: 15px;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     line-height: 20px;
   }
@@ -1586,4 +1586,10 @@ button {
     margin-top: 20px;
     margin-left: 20px;
   }
+}
+
+.mobile-menu > .nav-list > a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
 }
