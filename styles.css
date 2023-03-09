@@ -433,6 +433,21 @@ h1 {
   align-items: center;
   padding: 4px 12px;
   color: #01f;
+  width: 103px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.lang-item2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  color: #01f;
   width: 107px;
   height: 24px;
   background: #ebebff;
