@@ -8,22 +8,32 @@
     <title>Tom full-stack web developer</title>
   </head>
   <body>
-    <header>
+    <header id="main">
       <div class="nav-bar">
         <div class="for-logo">
-          <a class="logo" href="#">Tom Daniel</a>
+          <a class="logo" href="#">Tom</a>
         </div>
         <nav class="nav-link">
           <div class="Hambuger">
+            <div id="hamma">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
+            </div>
             <ul id="navLinks" class="navbar-list">
-              <li class="desktop-nav-list"><a href="#works-1">Portfolio</a></li>
+              <li class="desktop-nav-list"><a href="#main">Portfolio</a></li>
               <li class="desktop-nav-list"><a href="#about">About</a></li>
               <li class="desktop-nav-list"><a href="#contact">Contact</a></li>
             </ul>
           </div>
+        </nav>
+        <nav class="mobile-nav">
+          <span class="close-btn">x</span>
+          <ul class="mobile-menu">
+            <li class="nav-list"><a href="#main">Portfolio</a></li>
+            <li class="nav-list"><a href="#about">About</a></li>
+            <li class="nav-list"><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -215,7 +225,7 @@
     </section>
 
     <!--ABOUT-->
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-me flex column">
         <div class="is-me flex column">
           <h2 class="about-text">About Myself</h2>
@@ -304,7 +314,7 @@
 
 
 
-    <section class="Contact-section">
+    <section id="contact" class="Contact-section">
       <div class="Contact-me">
         <h2 class="Contact-head">Contact me</h2>
         <p class="Contact-paragraph">
