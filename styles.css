@@ -1297,6 +1297,25 @@ button {
     object-fit: unset;
   }
 
+  .portfolio-modal-img img {
+    width: 100%;
+    padding: 10px;
+    align-self: center;
+    height: 379px;
+  }
+
+  .tonic0-modal {
+    font-size: 40px;
+    line-height: 60px;
+    width: 1056px;
+    font-style: normal;
+    font-weight: 700;
+    color: #172b4d;
+    height: 70px;
+    margin-top: -65px;
+    margin-bottom: 10px;
+  }
+
   .work-card1 {
     display: flex;
     align-items: flex-start;
@@ -1435,10 +1454,11 @@ button {
     display: flex;
     justify-content: center;
     text-align: left;
-    width: 95%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 7px;
+    margin-bottom: 32px;
     padding: 20px;
     gap: 12px;
     background: #fff;
@@ -1449,7 +1469,7 @@ button {
 
   .prop-modal {
     display: flex;
-    margin-top: -25px;
+    margin-top: -35px;
     height: 20px;
   }
 
@@ -1463,14 +1483,14 @@ button {
 
   .tonic-def-modal {
     display: flex;
-    width: 768px;
+    width: 600px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
     color: #344563;
     text-align: justify;
-    margin-top: 30px;
+    margin-top: 18px;
   }
 
   .git,
@@ -1484,15 +1504,17 @@ button {
     flex-direction: column;
     align-items: center;
     width: 400px;
-    margin-left: 817px;
-    margin-top: 76px;
+    margin-left: 636px;
+    margin-top: 31px;
+    margin-bottom: -32px;
   }
 
   .modal-button {
     display: flex;
-    margin-top: 20px;
+    margin-top: -29px;
     gap: 15px;
     overflow: hidden;
+    margin-left: -10px;
   }
 
   #modalBtn-1,
