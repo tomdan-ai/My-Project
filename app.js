@@ -39,39 +39,43 @@ contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const errorMessage = document.getElementById('errorMessage');
     errorMessage.innerText = 'Your email should be in lowercase only!!!';
-    errorMessage.style = 'color:#fff;display:block;margin-top:10px;';
+    errorMessage.style = 'color:red;display:block;margin-top:10px;';
   }
 });
 // PROJECT POPUP
 const cards = [
   {
-    image: 'img/JS1.png',
-    name: 'Tonic',
-    preview: '',
+    image: 'img/GDC-page.jpg',
+    name: 'Conference App',
+    preview: 'https://tomdan-ai.github.io/Capstone-redo/index.html',
+    preview2: 'https://github.com/tomdan-ai/Capstone-redo',
     code: '',
     tags: ['html', 'css', 'javascript'],
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
   },
   {
-    image: 'img/JS2.png',
-    name: 'Multi-Post Stories',
-    preview: '',
+    image: 'img/X-O.jpg',
+    name: 'Tic-Tac-Toe',
+    preview: 'https://tomdan-ai.github.io/Tic-tac-toe/',
+    preview2: 'https://github.com/tomdan-ai/Tic-tac-toe',
     code: '',
     tags: ['html', 'Ruby on rails', 'css', 'javascript'],
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
   },
   {
-    image: 'img/Snapshoot Portfolio (2).png',
-    name: 'Tonic',
-    preview: '',
+    image: 'img/Awesome-books.jpg',
+    name: 'Awesome Books',
+    preview: 'https://tomdan-ai.github.io/Awesome-books-ES6/',
+    preview2: 'https://github.com/tomdan-ai/Awesome-books-ES6',
     code: '',
     tags: ['html', 'Ruby on rails', 'css', 'javascript'],
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
   },
   {
-    image: 'img/JS3.png',
-    name: 'Multi-Post Stories',
-    preview: '',
+    image: 'img/to-do.jpg',
+    name: 'Task Master',
+    preview: 'https://tomdan-ai.github.io/To-do-list/dist/',
+    preview2: 'https://github.com/tomdan-ai/To-do-list',
     code: '',
     tags: ['html', 'Ruby on rails', 'css', 'javascript'],
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
@@ -148,7 +152,7 @@ cards.forEach((cardContent) => {
 
     <div class="modal-button">
       <a href="${cardContent.preview}" ><button id="modalBtn-0" type="button">See live <img src="img/icon12.jpg" alt="modal-icon"></button></a>
-      <a href="${cardContent.preview}" ><button id="modalBtn-1" type="button">See Source <img src="img/icon13.jpg" alt="modal-icon-git"></button></a>
+      <a href="${cardContent.preview2}" ><button id="modalBtn-1" type="button">See Source <img src="img/icon13.jpg" alt="modal-icon-git"></button></a>
     </div>
     </div>
     </div>
