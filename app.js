@@ -51,7 +51,7 @@ const cards = [
     preview2: 'https://github.com/tomdan-ai/Capstone-redo',
     code: '',
     tags: ['html', 'css', 'javascript'],
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    desc: "online website for a conference for developers round the world. You will learn how to use the different niche in tech to empower, enlighthen and grow to a succesful career in the Tech field. ",
   },
   {
     image: 'img/X-O.jpg',
@@ -179,3 +179,38 @@ cards.forEach((cardContent) => {
     modal.style.display = 'none';
   });
 });
+
+//Language Dropdown 
+const lArrow  = document.getElementById('languages');
+const tech = document.querySelector('.know-sec');
+const tech1 = document.querySelector('.know-sec1');
+const tech2 = document.querySelector('.know-sec2');
+const knowLine = document.querySelector('.know-line');
+const frameWork = document.getElementById('frame')
+const skills = document.getElementById('SK')
+const arrow = document.querySelector('.arrow')
+const arrow1 = document.querySelector('.arrow1')
+
+
+lArrow.addEventListener('click', () => {
+  tech.style.display = 'block'; 
+});
+
+knowLine.addEventListener('click', () => {
+  tech.style.display = 'none';
+})
+frameWork.addEventListener('click', () => {
+  tech1.style.display = 'block'; 
+});
+skills.addEventListener('click', () => {
+  tech2.style.display = 'block'; 
+});
+
+arrow.addEventListener('click', () => {
+  tech1.style.display = 'none';
+})
+
+arrow1.addEventListener('click', () => {
+  tech2.style.display = 'none';
+})
+

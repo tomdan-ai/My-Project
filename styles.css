@@ -650,10 +650,26 @@ ul.list-items.skill-items {
 
 .know-sec {
   gap: 12px;
+  display: none;
+}
+.know-sec1 {
+  gap: 12px;
+  display: none;
+}
+.know-sec2 {
+  gap: 12px;
+  display: none;
 }
 
 .arrow-line {
   color: #dfe1e6;
+}
+
+.arrow {
+  cursor: pointer;
+}
+.arrow1 {
+  cursor: pointer;
 }
 
 .about-me {
@@ -1185,6 +1201,10 @@ button {
   border-radius: 16px;
 }
 
+.news {
+  width: 50%;
+}
+
 @media screen and (min-width: 768px) {
   .pics {
     background-image: url(img/Desktop\ Header\ bg.png);
@@ -1375,6 +1395,21 @@ button {
     flex-direction: row;
     gap: 12px;
     margin-top: 12px;
+    display: none;
+  }
+  .know-sec1 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 12px;
+    display: none;
+  }
+  .know-sec2 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 12px;
+    display: none;
   }
 
   .gap {
@@ -1404,7 +1439,10 @@ button {
 
   .know-line {
     margin-top: 64px;
+    cursor: pointer;
   }
+  
+ 
 
   /* || CONTACT PAGE STYING */
 
