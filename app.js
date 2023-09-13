@@ -49,36 +49,40 @@ const cards = [
     name: 'Conference App',
     preview: 'https://tomdan-ai.github.io/Capstone-redo/index.html',
     preview2: 'https://github.com/tomdan-ai/Capstone-redo',
-    code: '',
+    code: ['Redux', 'CSS', 'Javascript'],
     tags: ['html', 'css', 'javascript'],
-    desc: "online website for a conference for developers round the world. You will learn how to use the different niche in tech to empower, enlighthen and grow to a succesful career in the Tech field. ",
+    cover: 'An online website for a conference for developers round the world.',
+    desc: 'online website for a conference for developers round the world. You will learn how to use the different niche in tech to empower, enlighthen and grow to a succesful career in the Tech field. ',
   },
   {
-    image: 'img/X-O.jpg',
-    name: 'Tic-Tac-Toe',
-    preview: 'https://tomdan-ai.github.io/Tic-tac-toe/',
-    preview2: 'https://github.com/tomdan-ai/Tic-tac-toe',
-    code: '',
-    tags: ['html', 'Ruby on rails', 'css', 'javascript'],
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    image: 'img/Covid.jpg',
+    name: 'COVID-19 Metrics',
+    preview: 'https://covid-19-metrics.onrender.com/',
+    preview2: 'https://github.com/tomdan-ai/COVID-19-Database',
+    code: ['HTML', 'CSS', 'Javascript'],
+    tags: ['React', 'Redux', 'css'],
+    cover: 'COVID-19 DATA is a React app that retrieves real-time COVID-19 records for all countries from an API',
+    desc: 'COVID-19 DATA is a React app that retrieves real-time COVID-19 records for all countries from an API. It provides essential statistics, such as confirmed cases and deaths, and offers search functionality for easy access to specific countries. The app features a user-friendly interface, loading indicators, and error handling. It is responsive and compatible with desktop and mobile devices. Stay informed with COVID-19 DATA.',
   },
   {
-    image: 'img/Awesome-books.jpg',
-    name: 'Awesome Books',
-    preview: 'https://tomdan-ai.github.io/Awesome-books-ES6/',
-    preview2: 'https://github.com/tomdan-ai/Awesome-books-ES6',
-    code: '',
-    tags: ['html', 'Ruby on rails', 'css', 'javascript'],
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    image: 'img/Doc.jpg',
+    name: 'Doctors Appointments',
+    preview: 'https://doctor-appointement.onrender.com/',
+    preview2: 'https://github.com/tomdan-ai/DocBook-Front-End',
+    code: ['HTML', 'CSS', 'Javascript'],
+    tags: ['React/Redux', 'Ruby on rails', 'Tailwind CSS'],
+    cover: 'An innovative full stack web application designed to simplify the process of managing medical appointments and connecting patients with healthcare providers',
+    desc: 'An innovative full stack web application designed to simplify the process of managing medical appointments and connecting patients with healthcare providers. With an intuitive user interface, DocBook streamlines the healthcare appointment booking process and empowers both doctors and patients to make informed decisions',
   },
   {
-    image: 'img/to-do.jpg',
-    name: 'Task Master',
-    preview: 'https://tomdan-ai.github.io/To-do-list/dist/',
-    preview2: 'https://github.com/tomdan-ai/To-do-list',
-    code: '',
-    tags: ['html', 'Ruby on rails', 'css', 'javascript'],
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    image: 'img/Spendwise.jpg',
+    name: 'SpendWise',
+    preview: 'https://spendwise-spj5.onrender.com/',
+    preview2: 'https://github.com/tomdan-ai/Budget-app',
+    code: ['HTML', 'CSS', 'Javascript'],
+    tags: ['Ruby', 'Ruby on rails', 'Bootstrap'],
+    cover: 'Discover the power of effective financial management with SpendWise',
+    desc: "Discover the power of effective financial management with SpendWise, a cutting-edge budgeting app designed to empower you on your journey towards financial wellness. With SpendWise, you're equipped with a comprehensive toolkit to take charge of your finances, make informed spending decisions, and achieve your financial goals",
   },
 ];
 
@@ -99,16 +103,15 @@ cards.forEach((cardContent) => {
   <div class="work-content">
         <h2 class="tonic0 tonic">${cardContent.name}</h2>
         <ul class="prop">
-          <li class="can">CANOPY</li>
+          <li class="can">Front End Dev</li>
           <li class="bac"><img src="img/dot.jpg" alt="dot"> Back End Dev</li>
-          <li class="num"><img src="img/dot.jpg" alt="dot"> 2015</li>
+          <li class="num"><img src="img/dot.jpg" alt="dot"> 2023</li>
         </ul>
-        <p class="tonic-def">A daily selection of privately<br> personalized reads; no accounts or<br> sign-ups
-          required.</p>
+        <p class="tonic-def">${cardContent.cover}</p>
         <ul class="stack stack-desktop">
-          <li class="html">html</li>
-          <li class="css">css</li>
-          <li class="js">javaScript</li>
+          <li class="html">${cardContent.tags[0]}</li>
+          <li class="css">${cardContent.tags[1]}</li>
+          <li class="js">${cardContent.tags[2]}</li>
         </ul>
         <div class="button">
         <a href="${cardContent.preview}" ><button id="modalBtn-1" type="button" class="testButton">See Project</button></a>
@@ -143,9 +146,6 @@ cards.forEach((cardContent) => {
       <li class="html">html</li>
       <li class="css">css</li>
       <li class="js">javaScript</li><br />
-      <li class="git">github</li>
-      <li class="ruby">ruby</li>
-      <li class="boot">Bootstraps</li>
     </ul>
 
     <img src="img/icon11.jpg" alt="separator" class="line">
@@ -180,37 +180,35 @@ cards.forEach((cardContent) => {
   });
 });
 
-//Language Dropdown 
-const lArrow  = document.getElementById('languages');
+// Language Dropdown
+const lArrow = document.getElementById('languages');
 const tech = document.querySelector('.know-sec');
 const tech1 = document.querySelector('.know-sec1');
 const tech2 = document.querySelector('.know-sec2');
 const knowLine = document.querySelector('.know-line');
-const frameWork = document.getElementById('frame')
-const skills = document.getElementById('SK')
-const arrow = document.querySelector('.arrow')
-const arrow1 = document.querySelector('.arrow1')
-
+const frameWork = document.getElementById('frame');
+const skills = document.getElementById('SK');
+const arrow = document.querySelector('.arrow');
+const arrow1 = document.querySelector('.arrow1');
 
 lArrow.addEventListener('click', () => {
-  tech.style.display = 'block'; 
+  tech.style.display = 'block';
 });
 
 knowLine.addEventListener('click', () => {
   tech.style.display = 'none';
-})
+});
 frameWork.addEventListener('click', () => {
-  tech1.style.display = 'block'; 
+  tech1.style.display = 'block';
 });
 skills.addEventListener('click', () => {
-  tech2.style.display = 'block'; 
+  tech2.style.display = 'block';
 });
 
 arrow.addEventListener('click', () => {
   tech1.style.display = 'none';
-})
+});
 
 arrow1.addEventListener('click', () => {
   tech2.style.display = 'none';
-})
-
+});

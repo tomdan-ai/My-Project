@@ -1063,7 +1063,7 @@ form {
   margin: 2px;
   align-items: center;
   padding: 4px 12px;
-  width: 53px;
+  width: 40%;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
@@ -1076,7 +1076,7 @@ form {
   margin-left: 4px;
   align-items: center;
   padding: 4px 12px;
-  width: 53px;
+  width: 40%;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
@@ -1581,7 +1581,7 @@ button {
     margin: 2px;
     align-items: center;
     padding: 4px 12px;
-    width: 73px;
+    width: 40%;
     height: 34px;
     background: #ebebff;
     border-radius: 8px;
@@ -1594,7 +1594,7 @@ button {
     margin-left: 4px;
     align-items: center;
     padding: 4px 12px;
-    width: 73px;
+    width: 40%;
     height: 34px;
     background: #ebebff;
     border-radius: 8px;
