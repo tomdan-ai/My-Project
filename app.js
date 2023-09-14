@@ -21,6 +21,7 @@ addMenu(menu);
 removeMenu(closeNav);
 removeMenu(choose);
 
+
 // FORM VALIDATION
 const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', (e) => {
@@ -127,7 +128,7 @@ cards.forEach((cardContent) => {
   modalContent.innerHTML = `
   <div class="work-content-modal">
     <span class="closeBtn">&times;</span>
-      <h2 class="tonic0-modal">Tonic</h2>
+      <h2 class="tonic0-modal">${cardContent.name}</h2>
       <ul class="prop-modal">
       <li class="can">CANOPY</li>
       <li class="bac"><img src="img/dot.jpg" alt="dot"> Back End Dev</li>
@@ -142,17 +143,12 @@ cards.forEach((cardContent) => {
     <p>${cardContent.desc}</p>
     </div>
     <div class="alignment">
-      <ul class="stack-modal stack-desktop">
-      <li class="html">html</li>
-      <li class="css">css</li>
-      <li class="js">javaScript</li><br />
-    </ul>
 
     <img src="img/icon11.jpg" alt="separator" class="line">
 
     <div class="modal-button">
-      <a href="${cardContent.preview}" ><button id="modalBtn-0" type="button">See live <img src="img/icon12.jpg" alt="modal-icon"></button></a>
-      <a href="${cardContent.preview2}" ><button id="modalBtn-1" type="button">See Source <img src="img/icon13.jpg" alt="modal-icon-git"></button></a>
+      <a href="${cardContent.preview}" target="_blank"><button id="modalBtn-0" type="button">See live <img src="img/icon12.jpg" alt="modal-icon"></button></a>
+      <a href="${cardContent.preview2}" target="_blank"><button id="modalBtn-1" type="button">See Source <img src="img/icon13.jpg" alt="modal-icon-git"></button></a>
     </div>
     </div>
     </div>
@@ -166,7 +162,7 @@ cards.forEach((cardContent) => {
 
   // popup interaction
   const openModal = item.querySelector('.testButton');
-  const closeModal = item.querySelector('.closeBtn');
+  const closeModal = modal.querySelector('.closeBtn');
 
   openModal.addEventListener('click', (event) => {
     modal.classList.add('modal');
@@ -192,17 +188,17 @@ const arrow = document.querySelector('.arrow');
 const arrow1 = document.querySelector('.arrow1');
 
 lArrow.addEventListener('click', () => {
-  tech.style.display = 'block';
+  tech.style.display = 'flex';
 });
 
 knowLine.addEventListener('click', () => {
   tech.style.display = 'none';
 });
 frameWork.addEventListener('click', () => {
-  tech1.style.display = 'block';
+  tech1.style.display = 'flex';
 });
 skills.addEventListener('click', () => {
-  tech2.style.display = 'block';
+  tech2.style.display = 'flex';
 });
 
 arrow.addEventListener('click', () => {
@@ -210,5 +206,5 @@ arrow.addEventListener('click', () => {
 });
 
 arrow1.addEventListener('click', () => {
-  tech2.style.display = 'none';
+  tech2.style.display = 'flex';
 });

@@ -96,12 +96,56 @@ header {
 }
 
 @keyframes logo {
-  from {
-    transform: rotateY(180deg);
+  0% {
+    transform: rotateY(0deg);
   }
-
-  to {
+  50% {
     transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.work-container {
+  /* Define the initial styles */
+  transition: transform 3.3s ease, box-shadow 0.3s ease;
+}
+
+.work-container:hover {
+  /* Define the styles when hovering */
+  transform: scale(1.05); /* Increase the size by 5% */
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  cursor: pointer;
+  border-color: #01f;
+}
+
+.logo {
+  animation: logo 10s linear infinite;
+}
+
+
+
+.animate
+{
+   text-transform: uppercase;
+   background-image: linear-gradient( -225deg, #6070ff 0%, #44107a 29%, #ff1361 67%, #fff800 100% );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   display: inline-block;
+   font-weight: 900;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
 }
 
@@ -115,6 +159,7 @@ header {
   line-height: 20px;
   color: #6070ff;
   text-decoration: none;
+  margin-top: -40px;
 }
 
 .pics {
@@ -592,6 +637,7 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  width: 90%;
   color: #344563;
 }
 
@@ -650,14 +696,17 @@ ul.list-items.skill-items {
 
 .know-sec {
   gap: 12px;
+  flex-direction: row;
   display: none;
 }
 .know-sec1 {
   gap: 12px;
+  flex-direction: row;
   display: none;
 }
 .know-sec2 {
   gap: 12px;
+  flex-direction: row;
   display: none;
 }
 
@@ -824,16 +873,16 @@ form {
 
 /* start js */
 
-.work-container {
-  border: 1px solid #cbcdd1;
+.work-container { 
+     border: 1px solid #cbcdd1;
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
   align-content: center;
   text-align: left;
-  width: 95%;
+  width: 73%;
   margin-top: 15vh;
-  margin-left: auto;
+  margin-left: 80px;
   margin-right: auto;
   padding: 50px;
   gap: 12px;
@@ -927,6 +976,7 @@ form {
   font-size: 30px;
   color: #67798e;
   cursor: pointer;
+  z-index: 2;
 }
 
 .closeBtn:hover {
@@ -1251,6 +1301,7 @@ button {
     height: 72px;
     background-color: #fff;
     border-style: hidden;
+    position: fixed;
   }
 
   #errorMessage {
@@ -1492,7 +1543,7 @@ button {
     display: flex;
     justify-content: center;
     text-align: left;
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 7px;
@@ -1549,10 +1600,10 @@ button {
 
   .modal-button {
     display: flex;
-    margin-top: -29px;
     gap: 15px;
     overflow: hidden;
     margin-left: -10px;
+    margin-top: -150px;
   }
 
   #modalBtn-1,
