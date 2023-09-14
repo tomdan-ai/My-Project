@@ -188,17 +188,29 @@ const arrow = document.querySelector('.arrow');
 const arrow1 = document.querySelector('.arrow1');
 
 lArrow.addEventListener('click', () => {
-  tech.style.display = 'flex';
+  if(window.innerWidth > 738) {
+    tech.style.display = 'block'
+  }else {
+    tech.style.display = 'flex';
+  }
 });
 
 knowLine.addEventListener('click', () => {
   tech.style.display = 'none';
 });
 frameWork.addEventListener('click', () => {
-  tech1.style.display = 'flex';
+  if(window.innerWidth > 738) {
+    tech1.style.display = 'block'
+  }else {
+    tech1.style.display = 'flex';
+  }
 });
 skills.addEventListener('click', () => {
-  tech2.style.display = 'flex';
+  if(window.innerWidth > 738) {
+  tech2.style.display = 'block';
+  }else {
+    tech2.style.display = 'flex';
+  }
 });
 
 arrow.addEventListener('click', () => {
@@ -206,5 +218,9 @@ arrow.addEventListener('click', () => {
 });
 
 arrow1.addEventListener('click', () => {
-  tech2.style.display = 'flex';
+  if(window.innerWidth > 738) {
+    tech2.style.display = 'block';
+    }else {
+      tech2.style.display = 'flex';
+    }
 });
